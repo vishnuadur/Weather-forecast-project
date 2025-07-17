@@ -1,0 +1,31 @@
+/* In your output.css or directly in <style> tags */
+
+@keyframes rotateBorder {
+  0% {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(0deg, #A0AEC0, #CBD5E0, #E2E8F0);
+  }
+  25% {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #A0AEC0, #CBD5E0, #E2E8F0);
+  }
+  50% {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(180deg, #A0AEC0, #CBD5E0, #E2E8F0);
+  }
+  75% {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(270deg, #A0AEC0, #CBD5E0, #E2E8F0);
+  }
+  100% {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(360deg, #A0AEC0, #CBD5E0, #E2E8F0);
+  }
+
+}
+
+.rotating-border {
+  border-width: 8px;
+  border-style: solid;
+  animation: rotateBorder 4s linear infinite; 
+}
