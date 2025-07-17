@@ -97,7 +97,7 @@ function getCurrentLocation() {
 
 // Fetch weather data by coordinates
 function WeatherByCoords(lat, lon) {
-    const url = `${siteURL}/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKEY}`; // **changed baseURL to siteURL**
+    const url = `${siteURL}/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKEY}`; 
 
     fetch(url)
         .then(response => {
@@ -137,7 +137,7 @@ function WeatherData(city) {
 
 // Fetch 5-day forecast
 function fetchForecast(city) {
-    const url = `${siteURL}/forecast?q=${city}&units=metric&appid=${apiKEY}`; // **changed baseURL to siteURL**
+    const url = `${siteURL}/forecast?q=${city}&units=metric&appid=${apiKEY}`; 
 
     fetch(url)
         .then(response => {
